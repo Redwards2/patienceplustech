@@ -1,54 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Patience Plus Tech</title>
   <style>
     body {
-      font-family: sans-serif;
-      padding: 2rem;
-      background: #f9f9f9;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f6f9fc;
       color: #333;
-      max-width: 700px;
+    }
+    header {
+      background-color: #e0f0ff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #2c6cb4;
+    }
+    header p {
+      margin-top: 10px;
+      font-size: 1.2em;
+    }
+    .cta {
+      margin-top: 20px;
+    }
+    .cta a {
+      background-color: #2c6cb4;
+      color: #fff;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+    .services, .about, .contact {
+      padding: 40px 20px;
+      max-width: 900px;
       margin: auto;
     }
-    h1 {
-      color: #007acc;
+    .services h2, .about h2, .contact h2 {
+      color: #2c6cb4;
+      font-size: 2em;
     }
-    h2 {
-      margin-top: 2rem;
+    .service-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
     }
-    .button {
-      display: inline-block;
-      margin-top: 1.5rem;
-      padding: 0.75rem 1.25rem;
-      background-color: #007acc;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
+    .service-card {
+      flex: 1 1 250px;
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
     footer {
-      margin-top: 3rem;
-      font-size: 0.9rem;
-      color: #777;
       text-align: center;
+      padding: 20px;
+      background-color: #e0f0ff;
+      color: #444;
     }
   </style>
 </head>
 <body>
-  <h1>Tech Help You Can Trust</h1>
-  <p>At Patience Plus Tech, I help older adults and small business owners solve everyday tech problems — calmly, clearly, and without the jargon. Whether it's your printer, email, Wi-Fi, or a weird error you can't explain, I'm here to help.</p>
+  <header>
+    <h1>Patience Plus Tech</h1>
+    <p>Friendly, Clear Tech Help for Everyday Problems</p>
+    <div class="cta">
+      <a href="#contact">Get Help Now</a>
+    </div>
+  </header>
 
-  <h2>How It Works</h2>
-  <ol>
-    <li>Tell me what’s going wrong</li>
-    <li>I take a look (in person or remotely)</li>
-    <li>You get a simple solution, no pressure</li>
-  </ol>
+  <section class="services">
+    <h2>Services</h2>
+    <div class="service-list">
+      <div class="service-card">
+        <h3>General Tech Support</h3>
+        <p>Help with devices, printers, email, internet, and more.</p>
+      </div>
+      <div class="service-card">
+        <h3>Security Assistance</h3>
+        <p>Protect your data: passwords, scams, antivirus, and safe browsing.</p>
+      </div>
+      <div class="service-card">
+        <h3>Troubleshooting</h3>
+        <p>Fix crashes, bugs, slowness, and other tech headaches.</p>
+      </div>
+      <div class="service-card">
+        <h3>Support for Seniors</h3>
+        <p>Patient, simple tech help for phones, computers, and tablets.</p>
+      </div>
+      <div class="service-card">
+        <h3>Apps & Online Tools</h3>
+        <p>Get help with Zoom, Google, Facebook, Email, and more.</p>
+      </div>
+      <div class="service-card">
+        <h3>Business Support</h3>
+        <p>Tech help for small businesses—email, websites, automation, and more.</p>
+      </div>
+    </div>
+  </section>
 
-  <a class="button" href="mailto:patienceplustech@gmail.com">📧 Contact Me</a>
+  <section class="about">
+    <h2>About Patience Plus Tech</h2>
+    <p>Hi, I'm Ryan—a former Geek Squad agent now running a one-man tech support service based in Northern Michigan. I help people—especially older adults and small business owners—fix frustrating tech problems with patience, clarity, and trust. Whether it’s a slow computer or setting up a new phone, I’m here to help.</p>
+  </section>
 
-  <footer>&copy; 2025 Patience Plus Tech — Calm. Clear. Competent.</footer>
+  <section class="contact" id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:patienceplustech@gmail.com">patienceplustech@gmail.com</a></p>
+    <p>Located near Kalkaska, Michigan — Remote and In-Person Help Available</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Patience Plus Tech — Friendly, Simple Tech Help
+  </footer>
 </body>
 </html>
